@@ -1,0 +1,12 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreferenceCompat
+        app:key="modoCards"
+        app:title="Cambiar el color cartas"
+        />
+
+    <SwitchPreferenceCompat
+        app:key="modoLetters"
+        app:title="Color de letras VERDE"
+        />
+</PreferenceScreen>

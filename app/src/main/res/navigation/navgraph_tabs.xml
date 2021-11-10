@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph_tabs"
+    app:startDestination="@id/conteinerTabs">
+
+    <fragment
+        android:id="@+id/conteinerTabs"
+        android:name="com.example.parcial1.fragments.conteinerTabs"
+        android:label="fragment_conteiner_tabs"
+        tools:layout="@layout/fragment_conteiner_tabs" />
+    <fragment
+        android:id="@+id/tab_1"
+        android:name="com.example.parcial1.fragments.Tab_1"
+        android:label="fragment_tab_1"
+        tools:layout="@layout/fragment_tab_1" >
+        <argument
+            android:name="dataTexto"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/tab_2"
+        android:name="com.example.parcial1.fragments.Tab_2"
+        android:label="fragment_tab_2"
+        tools:layout="@layout/fragment_tab_2" />
+    <fragment
+        android:id="@+id/tab_3"
+        android:name="com.example.parcial1.fragments.Tab_3"
+        android:label="fragment_tab_3"
+        tools:layout="@layout/fragment_tab_3" />
+</navigation>

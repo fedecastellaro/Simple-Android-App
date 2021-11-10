@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navhost2"
+    app:startDestination="@id/listTareas">
+
+    <fragment
+        android:id="@+id/listTareas"
+        android:name="com.example.parcial1.fragments.listTareas"
+        android:label="fragment_list_tareas"
+        tools:layout="@layout/fragment_list_tareas" >
+        <action
+            android:id="@+id/action_listTareas_to_conteinerTabs2"
+            app:destination="@id/conteinerTabs2" />
+        <action
+            android:id="@+id/action_listTareas_to_settingsActivity"
+            app:destination="@id/settingsActivity" />
+        <action
+            android:id="@+id/action_listTareas_to_agregarTareaFragment"
+            app:destination="@id/agregarTareaFragment" />
+        <action
+            android:id="@+id/action_listTareas_to_info3"
+            app:destination="@id/info3" />
+    </fragment>
+    <fragment
+        android:id="@+id/conteinerTabs2"
+        android:name="com.example.parcial1.fragments.conteinerTabs"
+        android:label="fragment_conteiner_tabs"
+        tools:layout="@layout/fragment_conteiner_tabs" >
+        <argument
+            android:name="textoTab"
+            app:argType="string" />
+    </fragment>
+    <activity
+        android:id="@+id/settingsActivity"
+        android:name="com.example.parcial1.activities.SettingsActivity"
+        android:label="activity_settings"
+        tools:layout="@layout/activity_settings" />
+    <fragment
+        android:id="@+id/agregarTareaFragment"
+        android:name="com.example.parcial1.fragments.AgregarTareaFragment"
+        android:label="AgregarTareaFragment" />
+    <fragment
+        android:id="@+id/info3"
+        android:name="com.example.parcial1.fragments.Info"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+
+</navigation>
